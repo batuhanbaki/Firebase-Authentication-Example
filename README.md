@@ -12,8 +12,6 @@ Firebase Auth
 
 
 ## Photos
-```
 <img src="/splash.png"/> <br/>
 <img src="/splash.png"/> <br/>
 <img src="/splash.png"/> <br/>
-```
