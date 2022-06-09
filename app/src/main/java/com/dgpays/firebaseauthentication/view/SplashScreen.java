@@ -26,7 +26,7 @@ public class SplashScreen extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
             if (mAuth.getCurrentUser() != null) {
-                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+                startActivity(new Intent(SplashScreen.this, MainActivity.class));
             } else
             {
                 startActivity(new Intent(SplashScreen.this, LoginActivity.class));

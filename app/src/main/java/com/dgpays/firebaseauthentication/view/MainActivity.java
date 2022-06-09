@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void call() {
-        viewModel.call("BTC,BSV,BCH,ETH");
+        viewModel.call("BTC,BSV,PEG,ETH");
     }
 
     void setObserver() {
@@ -49,24 +49,24 @@ public class MainActivity extends AppCompatActivity {
         String price = "$" + String.format(Locale.ENGLISH, "%.2f", coins.get(0).getPrice());
         //TODO: buraya ekstra olarak kontrol eklenmeli
         binding.btccoin.setText(coins.get(0).getCoin());
-        binding.btccoinName.setText("- "+coins.get(0).getName());
+        binding.btccoinName.setText(" - "+coins.get(0).getName());
         binding.btcprice.setText(price);
         binding.btcpriceBottom.setText(price);
 
         binding.engcoin.setText(coins.get(1).getCoin());
-        binding.engcoinName.setText("- "+coins.get(1).getName());
+        binding.engcoinName.setText(" - "+coins.get(1).getName());
         price = "$" + String.format(Locale.ENGLISH, "%.2f", coins.get(1).getPrice());
         binding.engprice.setText(price);
         binding.engpriceBottom.setText(price);
 
         binding.tnbcoin.setText(coins.get(2).getCoin());
-        binding.tnbcoinName.setText("- "+coins.get(2).getName());
+        binding.tnbcoinName.setText(" - "+coins.get(2).getName());
         price = "$" + String.format(Locale.ENGLISH, "%.2f", coins.get(2).getPrice());
         binding.tnbprice.setText(price);
         binding.tnbpriceBottom.setText(price);
 
         binding.ethcoin.setText(coins.get(3).getCoin());
-        binding.ethcoinName.setText("- "+coins.get(2).getName());
+        binding.ethcoinName.setText(" - "+coins.get(3).getName());
         price = "$" + String.format(Locale.ENGLISH, "%.2f", coins.get(2).getPrice());
         binding.ethprice.setText(price);
         binding.ethpriceBottom.setText(price);
