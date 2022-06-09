@@ -9,10 +9,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.dgpays.firebaseauthentication.databinding.ActivitySplashBinding;
+import com.google.firebase.auth.FirebaseAuth;
 
 @SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
 
+    private FirebaseAuth mAuth;
     ActivitySplashBinding binding;
 
     @Override
@@ -20,10 +22,15 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        mAuth = FirebaseAuth.getInstance();
 
-        //TODO Auth check
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+            if (mAuth.getCurrentUser() != null) {
+                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+            } else
+            {
+                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+            }
             finish();
         }, 3000);
 

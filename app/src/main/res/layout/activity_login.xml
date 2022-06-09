@@ -79,7 +79,7 @@
 
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/forgotPassword"
@@ -97,7 +97,7 @@
         android:id="@+id/loginAlert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login"
+        android:layout_below="@id/loginBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto"
@@ -115,6 +115,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/facebookBtn"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginEnd="13dp"
@@ -128,6 +129,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/googleBtn"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
