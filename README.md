@@ -10,7 +10,14 @@ LiveData
 Firebase Auth
 ```
 
-## Photos
+## Using Free API Documantation
+
+```
+https://api.minerstat.com/docs-coins/documentation
+```
+
+
+## Photos From Application
 
 #### Splash Screen
 
