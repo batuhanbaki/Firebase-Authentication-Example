@@ -8,6 +8,7 @@ Lottie Files
 Viewmodel ktx
 LiveData
 Firebase Auth
+MVVM Architecture
 ```
 
 ## Using Free API Documantation
